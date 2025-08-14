@@ -5,8 +5,7 @@ const Footer = () => {
 
     return (
         <>
-            <img href="../images/Logo.png" />
-            <Nav />
+            <Nav orientation={"vertical"} />
         </>
     )
 }

@@ -1,6 +1,9 @@
 import React from 'react'
+import logo from '../images/Logo.png'
+import '../stylesheets/Nav.css'
+import '../stylesheets/Styles.css'
 
-const Nav = () => {
+const Nav = ({ orientation }) => {
 
     const internals = [
         {
@@ -42,15 +45,20 @@ const Nav = () => {
     };
 
     return (
-        <nav>
-            <ul>
-                <li>
-                    {internals.map((internalLink) => {
-                        return <a href={internalLink.url} onClick={handleClick(internalLink.address)}>
+        <nav className="nav-horizontal">
+            <img className="logo" src={logo} alt="logo" />
+            <ul className={
+                (orientation === "horizontal") ? "navlinks-horizontal" : "navlinks-vertical"
+            }>
+                {internals.map((internalLink) => {
+                    return (
+                        <li key={internalLink.address}>
+                            <a className="navlink highlight" href={internalLink.url} onClick={handleClick(internalLink.address)}>
                             {internalLink.name}
-                        </a>
-                    })}
-                </li>
+                            </a>
+                        </li>
+                    )
+                })}
             </ul>
         </nav>
     )

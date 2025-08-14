@@ -1,0 +1,57 @@
+a,
+a:hover,
+a:link,
+a:visited{
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.displaytitle {
+    font-size: 64px;
+    font-family: 'Californian FB', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-family: 'Californian FB', 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.lead {
+    font-size: 18px;
+    font-family: 'Californian FB', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.sectiontitle {
+    font-size: 20px;
+    font-family: 'Arial Rounded MT', Candara, Arial;
+    font-weight: bolder;
+}
+
+.sectioncategories {
+    font-size: 16px;
+    font-family: 'Arial Rounded MT', Candara, Arial;
+    font-weight: bolder;
+}
+
+.cardtitle {
+    font-size: 18px;
+    font-family: 'Arial Rounded MT', Candara, Arial;
+    font-weight: bolder;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-family: 'Arial Rounded MT', Candara, Arial;
+    font-weight: normal;
+}
+
+.highlight {
+    font-size: 16px;
+    font-family: 'Arial Rounded MT', Candara, Arial;
+    font-weight: bold;
+}

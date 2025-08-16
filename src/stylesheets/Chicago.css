@@ -1,0 +1,8 @@
+.chicago {
+    display: grid;
+    grid-template-rows: 80px 70px auto;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: start;
+    width: 400px;
+}

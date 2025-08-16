@@ -1,0 +1,11 @@
+article {
+    display: grid;
+    grid-auto-rows: min-content;
+    row-gap: 20px;
+}
+
+.marquee {
+    display: grid;
+    width: 100vw;
+    grid-auto-flow: column;
+}

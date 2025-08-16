@@ -1,48 +1,14 @@
 import React from 'react'
-import logo from '../images/Logo.png'
+import logo from '../images/Logo.svg'
+import Link  from './Link'
 import '../stylesheets/Nav.css'
 import '../stylesheets/Styles.css'
+import { useContext } from 'react'
+import { internalLinksContext } from '../context/globalContext'
 
 const Nav = ({ orientation }) => {
 
-    const internals = [
-        {
-            name: "Home",
-            address: "home",
-            url: "/#home"
-        },
-        {
-            name: "About",
-            address: "about",
-            url: "/#about"
-        },
-        {
-            name: "Menu",
-            address: "menu",
-            url: "/#menu"
-        },
-        {
-            name: "Reservations",
-            address: "reservations",
-            url: "/#reservations"
-        },
-        {
-            name: "Order Online",
-            address: "order-online",
-            url: "/#order-online"
-        }
-    ];
-
-    const handleClick = (anchor) => () => {
-        const id = `${anchor}-section`;
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        }
-    };
+    const internals = useContext(internalLinksContext);
 
     return (
         <nav className="nav-horizontal">
@@ -53,9 +19,7 @@ const Nav = ({ orientation }) => {
                 {internals.map((internalLink) => {
                     return (
                         <li key={internalLink.address}>
-                            <a className="navlink highlight" href={internalLink.url} onClick={handleClick(internalLink.address)}>
-                            {internalLink.name}
-                            </a>
+                            <Link to={internalLink.url} css="lead textblack">{ internalLink.name }</Link>
                         </li>
                     )
                 })}

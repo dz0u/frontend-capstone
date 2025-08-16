@@ -1,0 +1,11 @@
+img {
+    width: 265px;
+    height: 185px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.cardbody {
+    width: 225px;
+    padding: 20px 20px;
+}

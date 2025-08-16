@@ -22,7 +22,7 @@ a:visited{
 
 .lead {
     font-size: 18px;
-    font-family: 'Californian FB', 'Times New Roman', Times, serif;
+    font-family: 'Arial Rounded MT', Candara, Arial;
     font-weight: bold;
 }
 
@@ -54,4 +54,70 @@ a:visited{
     font-size: 16px;
     font-family: 'Arial Rounded MT', Candara, Arial;
     font-weight: bold;
+}
+
+.textyellow {
+    color: #F4CE14;
+}
+
+.textwhite {
+    color: #EDEFEE;
+}
+
+.textblack {
+    color: #333333;
+}
+
+.textgreen {
+    color: #495E57;
+}
+
+.textapricot {
+    color: #EE9972;
+}
+
+.bodyyellow {
+    background-color: #F4CE14;
+}
+
+.bodygreen {
+    background-color: #495E57;
+}
+
+.bodywhite {
+    background-color: #EDEFEE;
+}
+
+.bodyblack {
+    background-color: #333333;
+}
+
+.bodyapricot {
+    background-color: #EE9972;
+}
+
+.bodypeach {
+    background-color: #FBDABB;
+}
+
+.hero {
+    display: block;
+    height: 400px;
+    width: 100vw;
+    background-color: #495E57;
+}
+
+.primarybutton {
+    height: 60px;
+    width: 200px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+    text-decoration-line: none !important;
 }

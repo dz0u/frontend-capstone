@@ -35,7 +35,7 @@ const Specials = () => {
                 <div className="marquee">
                     {specials.map((special) => {
                         return (
-                            <Card className="card" picture={special.picture} name={special.name} price={special.price} description={special.description} />
+                            <Card className="card" key={special.name} picture={special.picture} name={special.name} price={special.price} description={special.description} />
                         )
                     })}
                 </div>

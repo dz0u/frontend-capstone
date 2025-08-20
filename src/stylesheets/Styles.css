@@ -5,7 +5,6 @@ a:visited{
     text-decoration: none !important;
     text-decoration-line: none !important;
     border-bottom: none !important;
-    box-shadow: none !important;
 }
 
 .displaytitle {
@@ -115,6 +114,7 @@ a:visited{
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: 3px 5px #333333;
 }
 
 a {

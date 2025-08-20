@@ -1,0 +1,37 @@
+.bookingform {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25%;
+    gap: 2rem;
+}
+
+input,
+select,
+select > option {
+    font-size: 16px;
+    font-family: 'Arial Rounded MT', Candara, Arial;
+    font-weight: normal;
+    height: 3.5em;
+    text-align: left;
+    vertical-align: top;
+    border-radius: 16px;
+    box-shadow: 3px 5px #333333;
+}
+
+label {
+    font-size: 18px;
+    font-family: 'Arial Rounded MT', Candara, Arial;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-submit {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}

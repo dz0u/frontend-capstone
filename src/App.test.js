@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, act, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from './App';
 import BookingForm from './components/BookingForm';
 import { defaultAvailability, updateTimes, initializeTimes } from './components/availabilityUtils';
@@ -86,5 +87,48 @@ describe('initializeTimes reducer function', () => {
         ];
         const result = initializeTimes(initial);
         expect(result).toEqual(defaultAvailability);
+    });
+});
+
+describe('form validation tests', () => {
+    const correctForm = {
+        date: "2001-01-05",
+        time: "17:30",
+        guests: "3",
+        occasion: "Birthday"
+    };
+
+    test('Incorrect form input', async () => {
+        await act(async () => {
+            render(<Availability />);
+        });
+
+        const submitElement = screen.getByRole("button", { name: /make your reservation/i });
+        const form = screen.getByRole("form");
+
+        await userEvent.click(submitElement);
+
+        await waitFor(() => {
+            expect(form.checkValidity()).toBe(false);
+        });
+    });
+
+    test('Correct form input', async () => {
+        await act(async () => {
+            render(<Availability />);
+        });
+
+        const submitElement = screen.getByRole("button", { name: /make your reservation/i });
+        const form = screen.getByRole("form");
+
+        await userEvent.type(screen.getByLabelText(/date/i), correctForm.date);
+        await userEvent.type(screen.getByLabelText(/number of guests/i), correctForm.guests);
+        await userEvent.selectOptions(screen.getByLabelText(/occasion/i), correctForm.occasion);
+
+        await userEvent.click(submitElement);
+
+        await waitFor(() => {
+            expect(form.checkValidity()).toBe(true);
+        });
     });
 });

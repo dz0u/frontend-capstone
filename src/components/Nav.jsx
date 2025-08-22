@@ -18,7 +18,7 @@ const Nav = ({ orientation }) => {
             }>
                 {internals.map((internalLink) => {
                     return (
-                        <li key={internalLink.address}>
+                        <li key={internalLink.address} aria-label={internalLink.name}>
                             <Link to={internalLink.url} css="lead textblack">{ internalLink.name }</Link>
                         </li>
                     )

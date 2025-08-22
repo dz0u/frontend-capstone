@@ -15,7 +15,7 @@ select > option {
     text-align: left;
     vertical-align: top;
     border-radius: 16px;
-    box-shadow: 3px 5px #333333;
+    box-shadow: 3px 5px #495E57;
 }
 
 label {
@@ -34,4 +34,13 @@ label {
     display: flex;
     margin-top: 1rem;
     justify-content: center;
+}
+
+input:required:invalid {
+    -moz-box-shadow: none;
+    box-shadow: 3px 5px #ff4c4c;
+}
+
+input:required:valid {
+    box-shadow: 3px 5px #495E57;
 }

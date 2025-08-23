@@ -1,0 +1,16 @@
+.booking-page {
+    display: grid;
+    grid-template-areas:
+        ". reservations ."
+        ". form .";
+    grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
+    padding: 0;
+}
+
+.reservations {
+    grid-area: reservations;
+}
+
+.form {
+    grid-area: form;
+}

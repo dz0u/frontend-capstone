@@ -1,4 +1,4 @@
-img {
+.specialpic {
     width: 265px;
     height: 185px;
     border-top-left-radius: 16px;
@@ -8,4 +8,5 @@ img {
 .cardbody {
     width: 225px;
     padding: 20px 20px;
+    height: 300px;
 }

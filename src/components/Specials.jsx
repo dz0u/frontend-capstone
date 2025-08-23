@@ -24,22 +24,20 @@ const Specials = () => {
             picture: lemonDessert,
             name: "Lemon Dessert",
             price: "$5.00",
-            description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+            description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
         }
     ]
 
     return (
         <>
-            <article>
-                <h1 style={{ whiteSpace: 'nowrap', width: 'auto' }} className="weeklies displaytitle textblack">This Week's Specials</h1>
-                <div className="marquee">
-                    {specials.map((special) => {
-                        return (
-                            <Card className="card" key={special.name} picture={special.picture} name={special.name} price={special.price} description={special.description} />
-                        )
-                    })}
-                </div>
-            </article>
+            <p style={{ whiteSpace: 'nowrap', width: 'auto' }} className="weeklies displaytitle textblack">This Week's Specials</p>
+            <section className="marquee">
+                {specials.map((special) => {
+                    return (
+                        <Card className="card" key={special.name} picture={special.picture} name={special.name} price={special.price} description={special.description} />
+                    )
+                })}
+            </section>
         </>
     )
 }

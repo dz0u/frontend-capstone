@@ -1,0 +1,22 @@
+.calltoaction {
+    display: grid;
+    grid-template-areas: "chicago" "link";
+    height: fit-content;
+}
+
+.chicago {
+    grid-area: chicago;
+}
+
+.restaurantpic {
+    align-self: start;
+    height: 400px;
+    position: absolute;
+    right: 20%;
+    top: 150px;
+    border-radius: 16px;
+}
+
+.reservationbutton {
+    grid-area: link;
+}

@@ -1,3 +1,32 @@
-div {
+.flow-wrapper {
+    display: grid;
+    grid-template-areas: 
+        "hero hero hero" 
+        ". specials .";
+    grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
     padding: 0;
+}
+
+.hero {
+    grid-area: hero;
+
+    display: grid;
+    grid-template-areas: ". body .";
+    grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
+}
+
+.hero-body {
+    grid-area: body;
+
+    display: grid;
+    grid-auto-rows: min-content;
+    padding: 5% 0;
+}
+
+.specials {
+    grid-area: specials;
+    display: grid;
+    grid-auto-rows: min-content;
+    row-gap: 20px;
+    padding-top: 50px;
 }

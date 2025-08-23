@@ -1,14 +1,13 @@
 import '../stylesheets/Styles.css';
+import '../stylesheets/BookingConfirmed.css';
 
 const BookingConfirmed = () => {
 
     return (
-        <>
-            <article>
-                <h1 className="displaytitle textyellow">Booking Confirmed!</h1>
-                <p className="highlight textblack">Your reservation for is confirmed!</p>
-            </article>
-        </>
+        <section className="booking-confirmed bodygreen">
+            <p className="confirmation-title displaytitle textyellow">Booking Confirmed!</p>
+            <p className="confirmation-body highlight textwhite">Your Little Lemon reservation is confirmed!</p>
+        </section>
     )
 }
 export default BookingConfirmed;

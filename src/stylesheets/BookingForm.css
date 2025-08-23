@@ -1,7 +1,6 @@
 .bookingform {
     display: flex;
     flex-direction: column;
-    padding: 0px 25%;
     gap: 2rem;
 }
 

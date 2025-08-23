@@ -1,8 +1,13 @@
 .chicago {
     display: grid;
-    grid-template-rows: 80px 70px auto;
+    grid-template-rows: 2.5rem 4.5rem auto;
     grid-auto-flow: column;
     justify-content: start;
     align-items: start;
     width: 400px;
+}
+
+.littlelemon {
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }

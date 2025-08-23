@@ -99,13 +99,6 @@ a:visited{
     background-color: #FBDABB;
 }
 
-.hero {
-    display: block;
-    height: 400px;
-    width: 100vw;
-    background-color: #495E57;
-}
-
 .primarybutton {
     height: 60px;
     width: 200px;

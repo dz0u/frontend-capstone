@@ -1,14 +1,16 @@
 import '../stylesheets/Styles.css'
-import BookingForm from './BookingForm'
+import '../stylesheets/BookingPage.css'
 import Availability from './Availability'
 
 const Reservations = () => {
 
     return (
-        <>
-            <p className="displaytitle textyellow">Reservations</p>
-            <Availability />
-        </>
+        <section className="booking-page">
+            <p className="reservations displaytitle textyellow">Reservations</p>
+            <section className="form">
+                <Availability />
+            </section>
+        </section>
     )
 }
 export default Reservations;

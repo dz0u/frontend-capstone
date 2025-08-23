@@ -1,0 +1,16 @@
+.booking-confirmed {
+    display: grid;
+    grid-template-areas:
+        ". title ."
+        ". body .";
+    grid-template-columns: 1fr minmax(auto, 1000px) 1fr;
+    padding: 0;
+}
+
+.confirmation-title {
+    grid-area: title;
+}
+
+.confirmation-body {
+    grid-area: body;
+}
